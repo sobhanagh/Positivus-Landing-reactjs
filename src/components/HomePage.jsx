@@ -21,7 +21,7 @@ const HomePage = () => {
     ]
 
     return (
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-12">
             <div className="px-8 sm:mt-10 flex flex-col items-center lg:flex-row lg:justify-between">
                 <div className="flex flex-col items-start gap-5 lg:gap-10 md:max-w-2xl">
                     <h1 className="font-semibold text-4xl lg:text-6xl">Navigating the digital landscape for success</h1>
