@@ -1,10 +1,12 @@
+import HomePage from "./components/HomePage";
 import Navbar from "./components/Navbar";
 
 
 function App() {
   return (
-    <div>
+    <div className="mb-10">
       <Navbar />
+      <HomePage />
     </div>
   );
 }
