@@ -35,7 +35,7 @@ const Navbar = () => {
                 {
                     Links.map((link) => {
                         return (
-                            <a className='lg:text-lg' href={link.href} key={link.title}>{link.title}</a>
+                            <a className='lg:text-lg hover:underline underline-offset-4 decoration-black' href={link.href} key={link.title}>{link.title}</a>
                         )
                     })
                 }
