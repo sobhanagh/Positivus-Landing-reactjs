@@ -12,6 +12,8 @@ import fourBG from "../images/services/bg/four.svg";
 import fiveBG from "../images/services/bg/five.svg";
 import sixBG from "../images/services/bg/six.svg";
 
+import happen from "../images/services/happen.svg";
+
 
 const Services = () => {
 
@@ -126,7 +128,7 @@ const Services = () => {
                 <h1 className="bg-greenColor font-bold text-2xl px-5 py-1 lg:text-4xl">Services</h1>
                 <p className="text-center max-w-x lg:text-xl">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10 max-w-6xl mx-auto lg:gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-10 max-w-6xl mx-auto lg:gap-10">
                 {
                     cards.map((card) => {
                         return (
@@ -140,12 +142,22 @@ const Services = () => {
                                         <p className={`hidden lg:inline ${card.leranMoreColor}`}>Learn more</p>
                                     </div>
                                 </div>
-                                <img src={card.src.srcSm} className="lg:hidden" />
-                                <img src={card.src.srcBg} className="hidden lg:inline" />
+                                <img src={card.src.srcSm} className="lg:hidden" alt="card" />
+                                <img src={card.src.srcBg} className="hidden lg:inline" alt="card" />
                             </article>
                         )
                     })
                 }
+            </div>
+            <div className="flex items-center justify-between bg-silverColor max-w-6xl mx-auto p-5 rounded-lg">
+                <div className="flex flex-col gap-3 lg:gap-14">
+                    <h1 className="font-bold text-lg lg:text-5xl">Let’s make things happen</h1>
+                    <p className="max-w-xl lg:text-xl">Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
+                    <a className="w-full sm:max-w-96" href="#">
+                        <button className="text-white bg-darkColor px-3 py-2 rounded-md hover:bg-black w-full lg:text-lg">Get your free proposal</button>
+                    </a>
+                </div>
+                <img src={happen} alt="make things happen" className="hidden lg:inline" />
             </div>
         </div>
     )
