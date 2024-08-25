@@ -126,7 +126,7 @@ const Services = () => {
         <div className="my-16 px-10">
             <div className="flex flex-col items-center gap-5">
                 <h1 className="bg-greenColor font-bold text-2xl px-5 py-1 lg:text-4xl">Services</h1>
-                <p className="text-center max-w-x lg:text-xl">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
+                <p className="text-center max-w-5xl lg:text-xl">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-10 max-w-6xl mx-auto lg:gap-10">
                 {
@@ -135,7 +135,7 @@ const Services = () => {
                             <article key={card.title} className={`${card.bgColor} rounded-lg flex justify-between p-5 border-b-4 border-black`}>
                                 <div className="flex flex-col justify-between ">
                                     <h2 className={`${card.title.bgColor} ${card.title.txtColor} px-2 py-1 font-bold rounded-md lg:text-xl max-w-40`}>{card.title.name}</h2>
-                                    <div className={`flex items-center gap-3`}>
+                                    <div className="lex items-center gap-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`size-7 lg:size-8 p-1 cursor-pointer rounded-full -rotate-45 hover:rotate-0 transition-all duration-200 ${card.btn?.bgColor} ${card.btn?.txtColor}`}>
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                                         </svg>

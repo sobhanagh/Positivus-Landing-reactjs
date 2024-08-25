@@ -1,3 +1,4 @@
+import CaseStudies from "./components/CaseStudies";
 import HomePage from "./components/HomePage";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <HomePage />
       <Services />
+      <CaseStudies />
     </div>
   );
 }
