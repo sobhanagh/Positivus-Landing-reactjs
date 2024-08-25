@@ -1,6 +1,7 @@
 import CaseStudies from "./components/CaseStudies";
 import HomePage from "./components/HomePage";
 import Navbar from "./components/Navbar";
+import OnWorkingProcess from "./components/OnWorkingProcess";
 import Services from "./components/Services";
 
 
@@ -11,6 +12,7 @@ function App() {
       <HomePage />
       <Services />
       <CaseStudies />
+      <OnWorkingProcess />
     </div>
   );
 }
