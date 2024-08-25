@@ -70,7 +70,7 @@ const Services = () => {
         {
             src: {
                 srcSm: four,
-                srcBg: four,
+                srcBg: fourBG,
             },
             bgColor: "bg-silverColor",
             btn: {
