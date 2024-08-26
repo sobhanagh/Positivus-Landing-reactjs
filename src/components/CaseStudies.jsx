@@ -24,7 +24,7 @@ const CaseStudies = () => {
                 {
                     data.map((item) => {
                         return (
-                            <div key={item.desc} className="flex flex-col items-start justify-between p-5 lg:gap-10">
+                            <div key={item.desc} className="flex flex-col items-start justify-between p-5 lg:gap-10 gap-3">
                                 <p className="text-silverColor lg:text-lg">{item.desc}</p>
                                 <div className="flex items-center gap-3 text-greenColor">
                                     <p>Learn more</p>

@@ -77,7 +77,7 @@ const OnWorkingProcess = () => {
                 {
                     plans.map((plan, index) => {
                         return (
-                            <div key={plan.title} className="flex flex-col bg-silverColor p-5 gap-5 rounded-lg">
+                            <div key={plan.title} className="flex flex-col bg-silverColor p-5 gap-5 rounded-lg border-b-4 border-black">
                                 <div className="flex justify-between items-center">
                                     <h1 className="font-bold text-xl lg:text-2xl">
                                         <span className="text-2xl lg:text-4xl mr-3">0{index + 1}</span>
