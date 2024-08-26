@@ -1,4 +1,5 @@
 import CaseStudies from "./components/CaseStudies";
+import ContactUs from "./components/ContactUs";
 import HomePage from "./components/HomePage";
 import Navbar from "./components/Navbar";
 import OnWorkingProcess from "./components/OnWorkingProcess";
@@ -14,6 +15,7 @@ function App() {
       <CaseStudies />
       <OnWorkingProcess />
       <Teams />
+      <ContactUs />
     </div>
   );
 }
