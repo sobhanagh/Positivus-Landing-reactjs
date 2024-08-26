@@ -5,7 +5,7 @@ const Team = ({ member }) => {
     const { src, name, title, desc } = member;
 
     return (
-        <article className="flex flex-col border-2 border-b-4 border-black rounded-2xl p-5 gap-2">
+        <article className="flex flex-col border-2 border-b-4 border-black rounded-2xl p-5 gap-4">
             <div className="flex justify-between relative">
                 <div className="flex items-center gap-3">
                     <img className="size-20 lg:size-24" src={src} alt={name} />
