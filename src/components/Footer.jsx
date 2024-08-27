@@ -6,6 +6,9 @@ import twitter from "../images/Footer_social_media/twitter.svg";
 
 
 const Footer = () => {
+
+    const year = new Date().getFullYear()
+
     return (
         <div className="bg-darkColor text-white p-5">
             <div className="flex flex-col items-center py-3 md:px-10 gap-5 md:gap-10">
@@ -40,7 +43,7 @@ const Footer = () => {
                         <img src={twitter} alt='twitter' className='w-10' />
                     </div>
                     <hr className='w-full' />
-                    <p className='md:text-lg'>© 2023 Positivus. All Rights Reserved.</p>
+                    <p className='md:text-lg'>© {year} Positivus. All Rights Reserved.</p>
                 </div>
             </div>
         </div >
