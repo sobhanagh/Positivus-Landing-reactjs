@@ -10,6 +10,9 @@ module.exports = {
         silverColor: "#F3F3F3",
         bgInputFooter: "#292A32",
       },
+      screens: {
+        'xs': '400px',
+      },
     },
   },
   plugins: [],

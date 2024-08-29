@@ -39,7 +39,7 @@ const Testimonials = () => {
                 <h1 className="bg-greenColor font-bold text-2xl px-5 py-1 lg:text-4xl">Testimonials</h1>
                 <p className="text-center max-w-5xl lg:text-xl">Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p>
             </div>
-            <div className="flex flex-col items-center justify-between bg-darkColor sm:p-10 rounded-3xl overflow-hidden mt-10 min-h-96">
+            <div className="flex flex-col items-center justify-between bg-darkColor sm:p-10 rounded-3xl overflow-hidden mt-10 min-h-[600px] sm:min-h-[400px]">
                 <div className="w-11/12 text-white relative">
                     {
                         data.map((item, itemIndex) => {
@@ -57,8 +57,8 @@ const Testimonials = () => {
                                     className={`${style} transition duration-300 absolute inset-0 flex flex-col gap-5
                                 ${index === itemIndex ? 'opacity-100' : 'opacity-0'} p-5`}
                                 >
-                                    <p className="border-2 text-justify border-greenColor rounded-lg p-5">{comment}</p>
-                                    <h1 className="font-semibold text-greenColor">{name}</h1>
+                                    <p className="border-2 text-justify border-greenColor rounded-lg p-5 lg:text-lg">{comment}</p>
+                                    <h1 className="font-semibold text-greenColor lg:text-lg">{name}</h1>
                                     <h2>{title}</h2>
                                 </article>
                             )
