@@ -39,12 +39,12 @@ const OnWorkingProcess = () => {
         if (element.src.includes("plus")) {
             element.src = minuse;
             planBox.classList.replace("bg-silverColor", "bg-greenColor")
-            pBox.classList.replace("hidden", "block")
+            pBox.classList.replace("max-h-0", "max-h-96")
         }
         else {
             element.src = plus;
             planBox.classList.replace("bg-greenColor", "bg-silverColor")
-            pBox.classList.replace("block", "hidden")
+            pBox.classList.replace("max-h-96", "max-h-0")
         }
 
 
@@ -54,14 +54,12 @@ const OnWorkingProcess = () => {
 
         for (let i = 0; i < plans.length; i++) {
             if (plans[i].title !== title) {
-                console.log(title);
-
                 const planBox = boxChildren[i];
                 const imgPlanBox = boxChildren[i].childNodes[0].childNodes[1];
                 const pPlanBox = boxChildren[i].childNodes[1];
 
                 planBox.classList.replace("bg-greenColor", "bg-silverColor")
-                pPlanBox.classList.replace("block", "hidden")
+                pPlanBox.classList.replace("max-h-96", "max-h-0")
                 imgPlanBox.src = plus;
             }
         }
@@ -77,16 +75,18 @@ const OnWorkingProcess = () => {
                 {
                     plans.map((plan, index) => {
                         return (
-                            <div key={plan.title} className="flex flex-col bg-silverColor p-5 gap-5 rounded-lg border-b-4 border-black">
+                            <div key={plan.title} className="flex flex-col bg-silverColor p-5 gap-5 rounded-lg border-b-4 border-black transition-all duration-300">
                                 <div className="flex justify-between items-center">
                                     <h1 className="font-bold text-xl lg:text-2xl">
                                         <span className="text-2xl lg:text-4xl mr-3">0{index + 1}</span>
                                         {plan.title}</h1>
                                     <img onClick={(e) => handleClick(e, plan.title)} src={plus} alt="expand" className="size-6 cursor-pointer lg:size-8" />
                                 </div>
-                                <p className="hidden pt-3 border-t-2 border-darkColor lg:text-xl">
-                                    {plan.desc}
-                                </p>
+                                <div className="max-h-0 overflow-hidden transition-all duration-300">
+                                    <p className=" pt-3 border-t-2 border-darkColor lg:text-xl ">
+                                        {plan.desc}
+                                    </p>
+                                </div>
                             </div>
                         )
                     })
